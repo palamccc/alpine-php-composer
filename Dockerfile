@@ -4,6 +4,7 @@ RUN apk add --no-cache \
       php7-json \
       php7-openssl \
       php7-iconv \
+      php7-opcache \
       php7-phar \
       php7 \
     && wget http://getcomposer.org/installer \
