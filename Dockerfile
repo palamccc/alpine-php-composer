@@ -10,7 +10,7 @@ RUN apk add --no-cache \
       php7-phar \
     && wget http://getcomposer.org/installer \
     && php7 installer -- --install-dir=/usr/bin --filename=composer \
-    && rm installer
+    && rm installer \
     && { \
       echo '[global]'; \
       echo 'error_log = /proc/self/fd/2'; \
@@ -28,3 +28,4 @@ RUN apk add --no-cache \
     } > /etc/php7/php-fpm.d/www.conf
 #COPY composer.json .
 #RUN php7 /usr/bin/composer --no-interaction install && rm composer.json
+#CMD ["php-fpm7"]
