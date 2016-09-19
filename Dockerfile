@@ -1,5 +1,6 @@
 FROM alpine:edge
 WORKDIR /var/www/html
+EXPOSE 9000
 RUN apk add --no-cache \
       php7 \
       php7-fpm \
